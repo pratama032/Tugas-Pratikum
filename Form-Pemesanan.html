@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Pemesanan Pizza</title>
+</head>
+<body>
+    <!--Buat Headimg-->
+    <h1> Black Goose Bistro | Pizza-on-Demand</h1>
+    <!--Buat Paragraf-->
+    <p>Our 12"wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour</p>
+    <!--Buat Garis Pembatas-->
+    <hr>
+    
+    <!--Buat Form-->
+    <form>
+        <!--Pembungkus konten-->
+            <table></table>
+        <fieldset>
+        <!--Buat Table-->
+        <table>
+            <thead>
+            <!--Buat 1 Baris Isi Judul-->
+            <tr>
+                <!--Buat 2 Kolom dijadiin 1-->
+                <th colspan="2"> Your Information</th>
+                <tr>
+            </thead>
+            <tbody>
+                <!--Buat 5 Baris Isi Konten-->
+            <tr>
+                <!--Buat 2 Kolom-->
+            <td>
+                    <!--Deskripsi Imputan-->
+                <tr>
+                <td>
+                    <label for="Name">Name</label>
+                </td>
+                    <td>
+                    <input type="tex" id="name">
+                </td>
+            </tr>
+
+            <!--Buat Adress-->
+            <tr>
+                <td>
+                    <label for="Addres">Address</label>
+                </td>
+                <td>
+                    <input type="tex" id="addres">
+            </tr>
+            <tr>
+                <!--Buat No telepom-->
+                <td>
+                    <label for="telephone">Telephone Number</label>
+                </td>
+                <td>
+                    <input type="number" id="telephone">
+                </td>
+                </tr>
+            </tr>
+                <!--Buat Email-->
+                <tr>
+                <td>
+                    <label for="Email">Email</label>
+                </td>
+                <td>
+                    <input type="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <!--Description -->
+                <td>
+                    <label for="Descpritiom">Delivery Instructions</label>
+                </td>
+                <td>
+                    <textarea id="description"></textarea>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </fieldset>
+
+        <!--Buat List Pemilihan Pizza-->
+        <fieldset>
+            <legend> <b>Design Your Dream Pizza</b> </legend>
+            <h4>Crust (Chooose One) :</h4>
+            <!--Buat List-->
+            <ul style="list-style-type :none ;">
+                <!--Jenis Classic White-->
+                <li>
+                    <input type="radio" id="white">
+                    <label for="white">Classic White</label>
+                </li>
+                <!--Jenis Multigrain-->
+                <li>
+                    <input type="radio" id="multigrain">
+                    <label for=""> Multigrain</label>
+                    </li>
+                    <!--Jenis Unamelt-->
+                <li>
+                    <input type="radio" id="Cheese-stuffed crust">
+                    <label for=""> Chesee-stuffed crust</label>
+                </li>
+                <!--jenis Glutten Free-->
+                <li>
+                    <input type="radio" id="gultten" name="crust">
+                    <label for="glutten"> Glutten-free</label>
+                </li>
+            </ul>
+            <!--Topping Pizza-->
+            <h4>Toppings (Choose as many as you want)</h4> 
+            <ul style="list-style-type :none ;">
+            <!--Buat List Topping Pizza-->
+            <li>
+                <input type="checkbox" id="red-sauce">
+                <label for="Red-sauce"> Red Sauce</label>
+            </li>
+            <li>
+                <input type="checkbox" id="white-sauce">
+                <label for="White-Sauce"> White Sauce</label>
+            </li>
+            <li>
+                <input type="Checkbox" id="Mozzarela Chesee">
+                <label for="Mozzarela Cheese"> Mozzarela Cheese</label>
+            </li>
+            <li>
+                <input type="checkbox" id="Pepperoni">
+                <label for="Pepperoni"> Pepperoni</label>
+            </li>
+            <li>
+                <input type="checkbox" id="Mushrooms">
+                <Label for="Mushrooms"> Mushrooms</Label>
+            </li>
+            <li>
+                <input type="checkbox" id="Peppers"
+                <label for="Peppers"> Peppers</label>
+            </li>
+            <li>
+                <input type="checkbox" id="Anchavies">
+                <label for="Anchavies">Anchavies</label>
+            </li>
+            
+            <h4>Number</h4>
+            <label for="count"> How Many Pizzas: </label>
+            <input type="number" id="Count">
+            <br>
+            <br>
+            <button type="submit"> Bring me a Pizza</button>
+            <button type="reset"> Reset</button>
+        </fieldset>
+    
+</body>
+</html>
