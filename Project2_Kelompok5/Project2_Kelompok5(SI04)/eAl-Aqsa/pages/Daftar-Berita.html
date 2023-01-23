@@ -50,7 +50,7 @@
             <button class="btn btn-sidebar">
               <i class="fas fa-search fa-fw"></i>
             </button>
-            <li class="breadcrumb-item"><a href="#">Login</a></li>
+            <li class="breadcrumb-item"><a href="Login.html">Login</a></li>
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="../../Mosque/Home.html" class="brand-link">
       <img src="../dist/img/logoo.png" alt="eAl-Aqsa Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">eAl-Aqsa</span>
     </a>
@@ -96,52 +96,24 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link">
+            <a href="../index.html" class="nav-link">
               <i class="nav-icon fas fa-mosque"></i>
               <p>
                 Masjid
-                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="Daftar-Masjid.html" class="nav-link">
-                  <i class="fas fa-table nav-icon"></i>
-                  <p>Kelola Masjid</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="Form-Masjid.html" class="nav-link active">
-                  <i class="fas fa-list nav-icon"></i>
-                  <p>Form Masjid</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="Daftar-Berita.html" class="nav-link active">
               <i class="nav-icon fas fa-newspaper"></i>
               <p>
                 Berita
-                <i class="right fas fa-angle-left"></i>
+                <i style="margin-left: 100px;" class="fa-solid fa-angle-right"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="Daftar-Berita.html" class="nav-link">
-                  <i class="fas fa-table nav-icon"></i>
-                  <p>Daftar Berita</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="Form-Berita.html" class="nav-link">
-                  <i class="fas fa-list nav-icon"></i>
-                  <p>Form Berita</p>
-                </a>
-              </li>
-            </ul>
+            </li>
             <li class="nav-item">
-              <a href="../Mosque/Home.html" class="nav-link">
+              <a href="../../Mosque/Home.html" class="nav-link">
                 <i class="nav-icon fas fa-right-from-bracket"></i>
                 <p>
                   Logout
@@ -161,11 +133,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
+            <h1 class="m-0">Daftar Berita</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Form Masjid</a></li>
+              <li class="breadcrumb-item"><a href="#">Kelola Masjid</a></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -177,84 +150,75 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
+          <div class="col-md-12">
+            <a href="Form-Berita.html">
+              <button type="button" class="btn btn-outline-secondary btn-sm">
+                Tambah
+              </button>
+            </a>
+          </div>
+          <br><br>
             <div class="col-md-12">
-                <form>
-                    <div class="form-group row">
-                      <label for="nama" class="col-4 col-form-label">Nama Masjid</label> 
-                      <div class="col-8">
-                        <input id="nama" name="nama" type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="ketagori" class="col-4 col-form-label">Kecamatan</label> 
-                      <div class="col-8">
-                        <select id="ketagori" name="ketagori" class="custom-select">
-                          <option value="bus">Beji</option>
-                          <option value="damri">Tapos</option>
-                          <option value="alphard">Cilodog</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="ketagori" class="col-4 col-form-label">Kelurahan</label> 
-                      <div class="col-8">
-                        <select id="ketagori" name="ketagori" class="custom-select">
-                          <option value="bus">Kukusan</option>
-                          <option value="damri">Kalimulya</option>
-                          <option value="alphard">Meruyung</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="deskripsi" class="col-4 col-form-label">Deskripsi Fasilitas</label> 
-                      <div class="col-8">
-                        <textarea id="deskripsi" name="deskripsi" cols="40" rows="5" class="form-control"></textarea>
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="nama" class="col-4 col-form-label">Nama Pengurus DKM</label> 
-                      <div class="col-8">
-                        <input id="nama" name="nama" type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="nama" class="col-4 col-form-label">No HP/Telpon</label> 
-                      <div class="col-8">
-                        <input id="no" name="no" type="number" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="nama" class="col-4 col-form-label">Email</label> 
-                      <div class="col-8">
-                        <input id="email" name="email" type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="nama" class="col-4 col-form-label">Alamat Web</label> 
-                      <div class="col-8">
-                        <input id="nama" name="nama" type="text" placeholder="https://" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="deskripsi" class="col-4 col-form-label">Alamat Lengkap</label> 
-                      <div class="col-8">
-                        <textarea id="deskripsi" name="deskripsi" cols="40" rows="2" class="form-control"></textarea>
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="nama" class="col-4 col-form-label">Latitude, Longitude</label> 
-                      <div class="col-8">
-                        <input id="latitude" name="latitude" type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <div class="offset-4 col-8">
-                        <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-                        <button name="update" type="submit" class="btn btn-primary">Update</button>
-                        <button name="hapus" type="reset" class="btn btn-primary">Hapus</button>
-                      </div>
-                    </div>
-                  </form>
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Tanggal</th>
+                        <th scope="col">Judul Berita</th>
+                        <th scope="col">Masjid</th>
+                        <th scope="col">Penulis</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>1 Januari 2023</td>
+                        <td>Peresmian Masjid</td>
+                        <td>Masjid Ilhami</td>
+                        <td>Bang Panji</td>
+                        <td>Draft</td>
+                        <td><a href="#">Detail</a>&nbsp;| <a href="#">Edit</a>&nbsp;| <a href="#">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>5 Januari 2023</td>
+                        <td>Pengajian Al-Quran</td>
+                        <td>Masjid At-Thohir</td>
+                        <td>Eric Muhammad Thohir</td>
+                        <td>Draft</td>
+                        <td><a href="#">Detail</a>&nbsp;| <a href="#">Edit</a>&nbsp;| <a href="#">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>6 Januari 2023</td>
+                        <td>TK Al-Quran</td>
+                        <td>Masjid Nurul Musthofa</td>
+                        <td>Ahmad Andalusi</td>
+                        <td>Draft</td>
+                        <td><a href="#">Detail</a>&nbsp;| <a href="#">Edit</a>&nbsp;| <a href="#">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>10 Januari 2023</td>
+                        <td>Ceramah Singkat</td>
+                        <td>Masjid Jami Al - Muiz</td>
+                        <td>Muhammad Ali Thohir</td>
+                        <td>Draft</td>
+                        <td><a href="#">Detail</a>&nbsp;| <a href="#">Edit</a>&nbsp;| <a href="#">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>15 Januari 2023</td>
+                        <td>Santunan Anak Yatim</td>
+                        <td>Masjid Kubah Emas</td>
+                        <td>Ahmad Zaelani Mucthar</td>
+                        <td>Draft</td>
+                        <td><a href="#">Detail</a>&nbsp;| <a href="#">Edit</a>&nbsp;| <a href="#">Delete</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
         </div>
       </div><!-- /.container-fluid -->
